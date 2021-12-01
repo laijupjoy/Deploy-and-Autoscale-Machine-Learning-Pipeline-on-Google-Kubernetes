@@ -75,7 +75,7 @@ Click the Activate Cloud Shell button at the top of the console window to open t
 
 Clone the GitHub repository in Cloud Shell 
 
-git clone <GitHub repository web URL>
+git clone <GitHub_repository_web_URL>
 
 ## Step 5 - Set Project ID Environment Variable
 
@@ -170,17 +170,24 @@ Execute the following command to autoscale the application:
 
 kubectl autoscale deployment <Project_name> --max 6 --min 3 --cpu-percent 50
 
+
+
 ### Manual Scaling
 
 ![](manual_scaling.jpg)
+
+
 
 ### Auto-Scaling
 
 ![](autoscale.jpg)
         
+
+
 ### Auto-Scaling Deployment_Details
 
 ![](deployment_details.jpg)
+
 
 
 
@@ -195,6 +202,7 @@ kubectl autoscale deployment <Project_name> --max 6 --min 3 --cpu-percent 50
 **Cloud Services:** Kubernetes,Docker,Container Registry,Kubernetes Engine,Cloud Shell
 
 **IDE:** Pycharm 
+
 
 
 
