@@ -126,7 +126,7 @@ virtual, physical, cloud-based, and on-premises.
 
 ![](create_nodes.jpg)
 
-![](kubernet engine status.jpg)
+![](kubernet_engine_status.jpg)
 
 ## Step 9 - Deploy Application
 
