@@ -14,19 +14,19 @@ Kubernetes comes with some very important features that we use in our everyday M
 
 Scheduling: 
 
-        Decides where and when containers should run
+Decides where and when containers should run
 
 Lifecycle and health: 
 
-       Ensures that all containers are up all time and it spins up new ones when an old container dies
+Ensures that all containers are up all time and it spins up new ones when an old container dies
 
 Scaling: 
 
-        Provides an easy way to scale containers up or down, manually or automatically (autoscaling)
+Provides an easy way to scale containers up or down, manually or automatically (autoscaling)
 
 Load balancing:
 
-        Automatically distributes the load between containers
+Automatically distributes the load between containers
 
 
 
