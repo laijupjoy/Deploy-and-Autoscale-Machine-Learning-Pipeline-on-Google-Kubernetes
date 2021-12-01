@@ -114,8 +114,7 @@ virtual, physical, cloud-based, and on-premises.
 
 i. Set your project ID and Compute Engine zone options for the gcloud tool:
 
-             gcloud config set project $PROJECT_ID 
-             
+             gcloud config set project $PROJECT_ID  
 ####      
              gcloud config set compute/zone us-central1
      
