@@ -92,12 +92,12 @@ Create the docker image of the application by executing the following code:
 ![](docker_build.jpg)
 
 ## Step 7 - Upload docker image on Google Container Registry
-   
-    i. Authenticate to Container Registry (you need to run this only once):
+
+i. Authenticate to Container Registry (you need to run this only once):
        
              gcloud auth configure-docker
     
-   ii. Execute the following code to upload the docker image to Google Container Registry:
+ii. Execute the following code to upload the docker image to Google Container Registry:
          
              docker push gcr.io/${PROJECT_ID}/insurance-app:v1
 
@@ -112,14 +112,14 @@ A Kubernetes cluster is a set of nodes that run containerized applications.
 Kubernetes clusters allow containers to run across multiple machines and environments: 
 virtual, physical, cloud-based, and on-premises.
 
-     i. Set your project ID and Compute Engine zone options for the gcloud tool:
+i. Set your project ID and Compute Engine zone options for the gcloud tool:
 
              gcloud config set project $PROJECT_ID 
              
        
              gcloud config set compute/zone us-central1
      
-    ii. Create a cluster by executing the following code:
+ii. Create a cluster by executing the following code:
     
              gcloud container clusters create insurance-cluster --num-nodes=1
 
