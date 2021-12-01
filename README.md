@@ -12,19 +12,19 @@ with the same or different applications
 
 Kubernetes comes with some very important features that we use in our everyday ML DevOps life:
 
-Scheduling: 
+### Scheduling: 
 
 Decides where and when containers should run
 
-Lifecycle and health: 
+### Lifecycle and health: 
 
 Ensures that all containers are up all time and it spins up new ones when an old container dies
 
-Scaling: 
+### Scaling: 
 
 Provides an easy way to scale containers up or down, manually or automatically (autoscaling)
 
-Load balancing:
+### Load balancing:
 
 Automatically distributes the load between containers
 
@@ -75,19 +75,19 @@ Click the Activate Cloud Shell button at the top of the console window to open t
 
 Clone the GitHub repository in Cloud Shell 
 
-git clone <GitHub_repository_web_URL>
+           git clone <GitHub_repository_web_URL>
 
 ## Step 5 - Set Project ID Environment Variable
 
 Execute the following code in Cloud Shell to set the PROJECT_ID environment variable:
 
-export PROJECT_ID= <project_name>
+           export PROJECT_ID= <project_name>
 
 ## Step 6 - Build the docker image
 
 Create the docker image of the application by executing the following code:
 
-docker build -t gcr.io/${PROJECT_ID}/insurance-app:v1 
+            docker build -t gcr.io/${PROJECT_ID}/insurance-app:v1 
 
 ![](docker_build.jpg)
 
