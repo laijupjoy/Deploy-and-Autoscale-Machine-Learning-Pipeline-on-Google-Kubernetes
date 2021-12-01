@@ -95,11 +95,11 @@ Create the docker image of the application by executing the following code:
    
     i. Authenticate to Container Registry (you need to run this only once):
        
-       gcloud auth configure-docker
+             gcloud auth configure-docker
     
    ii. Execute the following code to upload the docker image to Google Container Registry:
          
-       docker push gcr.io/${PROJECT_ID}/insurance-app:v1
+             docker push gcr.io/${PROJECT_ID}/insurance-app:v1
 
 ![](push_docker_gcr.jpg)
 
@@ -114,12 +114,14 @@ virtual, physical, cloud-based, and on-premises.
 
      i. Set your project ID and Compute Engine zone options for the gcloud tool:
 
-        gcloud config set project $PROJECT_ID 
-        gcloud config set compute/zone us-central1
+             gcloud config set project $PROJECT_ID 
+             
+       
+             gcloud config set compute/zone us-central1
      
     ii. Create a cluster by executing the following code:
     
-        gcloud container clusters create insurance-cluster --num-nodes=1
+             gcloud container clusters create insurance-cluster --num-nodes=1
 
 ![](set_zone.jpg)
 
@@ -133,7 +135,7 @@ virtual, physical, cloud-based, and on-premises.
 To deploy and manage applications on a GKE cluster, you must communicate with the Kubernetes cluster management system. 
 Execute the following command to deploy the application:
 
-kubectl create deployment insurance-app --image=gcr.io/${PROJECT_ID}/insurance-app:v1
+           kubectl create deployment insurance-app --image=gcr.io/${PROJECT_ID}/insurance-app:v1
 
 ![](deploy_application.jpg)
 
@@ -142,7 +144,7 @@ kubectl create deployment insurance-app --image=gcr.io/${PROJECT_ID}/insurance-a
 By default, the containers you run on GKE are not accessible from the internet because they do not have external IP addresses. 
 Execute the following code to expose the application to the internet:
 
-kubectl expose deployment insurance-app --type=LoadBalancer --port 80 --target-port 8080
+           kubectl expose deployment insurance-app --type=LoadBalancer --port 80 --target-port 8080
 
 ![](expose_app.jpg)
 
@@ -151,7 +153,7 @@ kubectl expose deployment insurance-app --type=LoadBalancer --port 80 --target-p
 Execute the following code to get the status of the service. 
 EXTERNAL-IP is the web address you can use in browser to view the published app.
 
-kubectl get service
+           kubectl get service
 
 ![](service.jpg)
 
@@ -161,14 +163,14 @@ kubectl get service
 
 ## Step 13 - Configuring autoscale deployment in kubernetes   
 
-Autoscaling based on resources utilization: 
+           Autoscaling based on resources utilization: 
 
 This will creates Horizontal Pod Autoscaler object to autoscale the Deployment when CPU utilization surpasses 50%, 
 and ensures that there is always a minimum of 3 replica and a maximum of 6 replicas.
 
 Execute the following command to autoscale the application:
 
-kubectl autoscale deployment <Project_name> --max 6 --min 3 --cpu-percent 50
+           kubectl autoscale deployment <Project_name> --max 6 --min 3 --cpu-percent 50
 
 
 
