@@ -33,28 +33,41 @@ Load balancing:
 ## Steps for deploying ML model
 
 1. Create a new project in GCP
+
 2. Enable Container Registry and Kubernetes Engine
+
 3. Activate Cloud Shell
+
 4. Import Project 
+
 5. Set Project ID Environment Variable
+
 6. Build the docker image
+
 7. Upload docker image on Google Container Registry
+
 8. Create Cluster
+
 9. Deploy Application
+
 10.Expose your application to the internet
+
 11.Check Service
+
 12.See the app in action on http://EXTERNAL-IP:PORT
+
 13.Configuring autoscale deployment in kubernetes   
 
-## Step 1 — Create a new project in GCP Console
+
+## Step 1 - Create a new project in GCP Console
 
 Sign-in GCP console and go to Manage Resources, Click on create New Project
 
-## Step 2 — Enable Container Registry and Kubernetes Engine
+## Step 2 - Enable Container Registry and Kubernetes Engine
 
 Enable Container Registry and Kubernetes Engine in Google Cloud Platform
 
-## Step 3 — Activate Cloud Shell
+## Step 3 - Activate Cloud Shell
 
 Click the Activate Cloud Shell button at the top of the console window to open the Cloud Shell
 
@@ -157,15 +170,15 @@ Execute the following command to autoscale the application:
 
 kubectl autoscale deployment <Project_name> --max 6 --min 3 --cpu-percent 50
 
-###Manual Scaling
+### Manual Scaling
 
 ![](manual_scaling.jpg)
 
-###Auto-Scaling
+### Auto-Scaling
 
 ![](autoscale.jpg)
         
-###Auto-Scaling Deployment_Details
+### Auto-Scaling Deployment_Details
 
 ![](deployment_details.jpg)
 
