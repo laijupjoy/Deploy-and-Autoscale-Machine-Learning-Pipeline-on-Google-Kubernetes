@@ -157,10 +157,15 @@ Execute the following command to autoscale the application:
 
 kubectl autoscale deployment <Project_name> --max 6 --min 3 --cpu-percent 50
 
+###Manual Scaling
+
 ![](manual_scaling.jpg)
 
+###Auto-Scaling
 
 ![](autoscale.jpg)
+        
+###Auto-Scaling Deployment_Details
 
 ![](deployment_details.jpg)
 
