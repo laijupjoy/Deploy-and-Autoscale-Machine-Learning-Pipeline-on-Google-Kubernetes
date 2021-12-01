@@ -162,7 +162,7 @@ EXTERNAL-IP is the web address you can use in browser to view the published app.
 
 ## Step 13 - Configuring autoscale deployment in kubernetes   
 
-           Autoscaling based on resources utilization: 
+### Autoscaling based on resources utilization: 
 
 This will creates Horizontal Pod Autoscaler object to autoscale the Deployment when CPU utilization surpasses 50%, 
 and ensures that there is always a minimum of 3 replica and a maximum of 6 replicas.
