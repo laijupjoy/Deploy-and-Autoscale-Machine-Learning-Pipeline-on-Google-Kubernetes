@@ -81,7 +81,7 @@ Clone the GitHub repository in Cloud Shell
 
 Execute the following code in Cloud Shell to set the PROJECT_ID environment variable:
 
-           export PROJECT_ID= <project_name>
+           export PROJECT_ID= <project_id>
 
 ## Step 6 - Build the docker image
 
