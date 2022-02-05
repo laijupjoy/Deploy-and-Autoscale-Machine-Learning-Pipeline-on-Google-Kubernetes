@@ -87,7 +87,7 @@ Execute the following code in Cloud Shell to set the PROJECT_ID environment vari
 
 Create the docker image of the application by executing the following code:
 
-            docker build -t gcr.io/${PROJECT_ID}/insurance-app:v1 
+            docker build -t gcr.io/${PROJECT_ID}/insurance-app:v1 .
 
 ![](docker_build.jpg)
 
